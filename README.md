@@ -1,16 +1,19 @@
 # react-native-tone2
 
-## Getting started
+Generate tone by frequency React Native module For iOS/Android. Updated for compatibility with React Native 0.73.6.
 
-`$ npm install react-native-tone2 --save`
+## Installation
 
-## Extra steps for iOS
-
-`$ cd ios && pod install && cd ..`
+```sh
+npm install react-native-tone2
+```
 
 ## Usage
-```javascript
-import Tone from 'react-native-tone2';
 
-Tone.play(261.63, 500); //play C4 for 500 milliseconds
+```js
+import { playTone } from 'react-native-tone2';
+
+// ...
+
+const result = await playTone(261.63, 500); //play C4 for 500 milliseconds
 ```
